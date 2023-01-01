@@ -39,7 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'information.apps.InformationConfig',
-    'intentMessages.apps.IntentmessagesConfig'
+    'intentMessages.apps.IntentmessagesConfig',
+    'usesPermission.apps.UsespermissionConfig',
 ]
 
 MIDDLEWARE = [
