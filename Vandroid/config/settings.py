@@ -41,6 +41,8 @@ INSTALLED_APPS = [
     'information.apps.InformationConfig',
     'intentMessages.apps.IntentmessagesConfig',
     'usesPermission.apps.UsespermissionConfig',
+    'customPermission.apps.CustompermissionConfig',
+
 ]
 
 MIDDLEWARE = [

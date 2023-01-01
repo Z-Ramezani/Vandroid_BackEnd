@@ -23,6 +23,8 @@ urlpatterns = [
     path('information/', include('information.urls')),
     path('intentMessages/', include('intentMessages.urls')),
     path('usesPermission/', include('usesPermission.urls')),
+    path('customPermission/', include('customPermission.urls')),
+
 
 
 ]
