@@ -24,6 +24,8 @@ urlpatterns = [
     path('intentMessages/', include('intentMessages.urls')),
     path('usesPermission/', include('usesPermission.urls')),
     path('customPermission/', include('customPermission.urls')),
+    path('APIPermission/', include('APIPermission.urls')),
+
 
 
 

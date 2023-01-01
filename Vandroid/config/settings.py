@@ -42,6 +42,8 @@ INSTALLED_APPS = [
     'intentMessages.apps.IntentmessagesConfig',
     'usesPermission.apps.UsespermissionConfig',
     'customPermission.apps.CustompermissionConfig',
+    'APIPermission.apps.ApipermissionConfig',
+
 
 ]
 
