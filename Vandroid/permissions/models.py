@@ -1,8 +1,5 @@
 from django.db import models
 
-# Create your models here.
-
-
 class Permission(models.Model):
     Uses_Name = models.CharField()
     Uses_Status = models.CharField(max_length=17)
