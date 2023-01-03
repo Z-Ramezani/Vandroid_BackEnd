@@ -16,8 +16,6 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
-import information
-
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('information/', include('information.urls')),
@@ -25,6 +23,8 @@ urlpatterns = [
     path('usesPermission/', include('usesPermission.urls')),
     path('customPermission/', include('customPermission.urls')),
     path('APIPermission/', include('APIPermission.urls')),
+    path('ActivityComponents/', include('activityComponents.urls')),
+
 
 
 

@@ -43,7 +43,7 @@ INSTALLED_APPS = [
     'usesPermission.apps.UsespermissionConfig',
     'customPermission.apps.CustompermissionConfig',
     'APIPermission.apps.ApipermissionConfig',
-
+    'activityComponents.apps.ActivitycomponentsConfig',
 
 ]
 

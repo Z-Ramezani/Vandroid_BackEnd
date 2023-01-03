@@ -2,11 +2,6 @@ from django.db import models
 
 
 class components(models.Model):
-    Activity_Exported = models.BooleanField()
-    Activity_FilterName = models.CharField()
-    Activity_FilterCategory = models.CharField()
-    Activity_FilterAction = models.CharField()
-    Activity_PermissionName = models.CharField()
 
     ActivityAlias_Exported = models.BooleanField()
     ActivityAlias_FilterName = models.CharField()

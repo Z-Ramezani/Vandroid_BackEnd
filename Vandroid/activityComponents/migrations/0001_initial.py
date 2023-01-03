@@ -12,15 +12,15 @@ class Migration(migrations.Migration):
 
     operations = [
         migrations.CreateModel(
-            name='IntentMessages',
+            name='ActivityComponents',
             fields=[
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('target_id', models.IntegerField()),
-                ('name', models.CharField(max_length=100)),
-                ('type', models.CharField(max_length=8)),
-                ('Permission', models.CharField(max_length=100)),
-                ('senderComponent', models.CharField(max_length=100)),
-                ('targetComponent', models.CharField(max_length=100)),
+                ('Exported', models.BooleanField()),
+                ('FilterName', models.CharField(max_length=50)),
+                ('FilterCategory', models.CharField(max_length=50)),
+                ('FilterAction', models.CharField(max_length=50)),
+                ('PermissionName', models.CharField(max_length=50)),
             ],
         ),
     ]

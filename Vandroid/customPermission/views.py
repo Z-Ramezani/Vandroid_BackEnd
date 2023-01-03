@@ -7,7 +7,6 @@ from information import views
 
 class ListCustomPermission(APIView):
     def get(self, request):
-        inten = CustomPermission.objects.filter(
-            target_id=views.ListInfo.id).values()
-        intent = CustomPermissionSerializer(instance=inten, many=True)
-        return Response(data=intent.data)
+        custom = CustomPermission.objects.filter(target_id=views.ListInfo.id).values()
+        custom2 = CustomPermissionSerializer(instance=custom, many=True)
+        return Response(data=custom2.data)

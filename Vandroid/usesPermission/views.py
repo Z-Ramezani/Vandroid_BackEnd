@@ -7,6 +7,6 @@ from information import views
 
 class ListUsesPermission(APIView):
     def get(self, request):
-        inten = UsesPermission.objects.filter(target_id=views.ListInfo.id).values()
-        intent = UsesPermissionSerializer(instance=inten, many=True)
-        return Response(data=intent.data)
+        uses = UsesPermission.objects.filter(target_id=views.ListInfo.id).values()
+        uses2 = UsesPermissionSerializer(instance=uses, many=True)
+        return Response(data=uses2.data)
