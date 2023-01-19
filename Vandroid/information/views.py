@@ -12,4 +12,4 @@ class ListInfo(APIView):
         info = Information.objects.filter(nameApp=request.data['nameApp']).values()
         info2 = InformationSerializer(instance=info, many=True)
         ListInfo.id = ((info2.data[0]['id']))
-        return Response(data=info.data)
+        return Response(data=info2.data)

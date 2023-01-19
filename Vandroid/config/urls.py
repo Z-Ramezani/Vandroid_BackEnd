@@ -25,6 +25,7 @@ urlpatterns = [
     path('APIPermission/', include('APIPermission.urls')),
     path('ActivityComponents/', include('activityComponents.urls')),
     path('ActivityAliasComponents/', include('activityAliasComponents.urls')),
+    path('ServicesComponents/', include('servicesComponents.urls')),
 
 
 

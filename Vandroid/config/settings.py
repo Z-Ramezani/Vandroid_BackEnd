@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'APIPermission.apps.ApipermissionConfig',
     'activityComponents.apps.ActivitycomponentsConfig',
     'activityAliasComponents.apps.ActivityaliascomponentsConfig',
+    'servicesComponents.apps.ServicescomponentsConfig',
 
 
 ]
