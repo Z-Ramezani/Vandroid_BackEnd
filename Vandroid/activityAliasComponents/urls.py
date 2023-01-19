@@ -4,5 +4,5 @@ from . import views
 app_name = 'activityAliasComponents'
 urlpatterns = [
 
-    path('', views.ListActivityComponents.as_view(), name='activityComponents'),
+    path('', views.ListActivityAliasComponents.as_view(), name='activityComponents'),
 ]

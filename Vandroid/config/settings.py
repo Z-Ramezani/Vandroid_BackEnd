@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
+    'django_filters',
     'information.apps.InformationConfig',
     'intentMessages.apps.IntentmessagesConfig',
     'usesPermission.apps.UsespermissionConfig',
@@ -46,6 +47,7 @@ INSTALLED_APPS = [
     'activityComponents.apps.ActivitycomponentsConfig',
     'activityAliasComponents.apps.ActivityaliascomponentsConfig',
     'servicesComponents.apps.ServicescomponentsConfig',
+    'filter.apps.FilterConfig',
 
 
 ]
