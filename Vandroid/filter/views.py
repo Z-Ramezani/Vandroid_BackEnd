@@ -9,17 +9,15 @@ from django.db.models import Q
 from filter.models import Filter
 from filter.serializers import FilterSerializer
 
+
 class ListFilterComponents(APIView):
     def get(self, request):
         if Filter.componentName == "Activity":
-            filt = Filter.objects.filter(Q(target_id=views.ListInfo.id) & 
-                Q(target_id_comp=views.ListActivityComponents.id))
+            filt = Filter.objects.filter(Q(target_id_comp=views.ListActivityComponents.id))
         if Filter.componentName == "ActivityAlias":
-            filt = Filter.objects.filter(Q(target_id=views.ListInfo.id) & 
-                Q(target_id_comp=views.ListActivityAliasComponents.id))
+            filt = Filter.objects.filter(Q(target_id_comp=views.ListActivityAliasComponents.id))
         if Filter.componentName == "ActivityAlias":
-            filt = Filter.objects.filter(Q(target_id=views.ListInfo.id) & 
-                Q(target_id_comp=views.ListServicesComponents.id))
+            filt = Filter.objects.filter(Q(target_id_comp=views.ListServicesComponents.id))
         filte = filt.values()
         filter = FilterSerializer(instance=filte, many=True)
         return Response(data=filter.data)
