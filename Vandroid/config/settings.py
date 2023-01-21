@@ -47,7 +47,9 @@ INSTALLED_APPS = [
     'activityComponents.apps.ActivitycomponentsConfig',
     'activityAliasComponents.apps.ActivityaliascomponentsConfig',
     'servicesComponents.apps.ServicescomponentsConfig',
-
+    'broadcastReceiversComponents.apps.BroadcastreceiverscomponentsConfig',
+    'dynamicRegisteredComponents.apps.DynamicregisteredcomponentsConfig',
+    'contentProvidersComponents.apps.ContentproviderscomponentsConfig',
 
 ]
 

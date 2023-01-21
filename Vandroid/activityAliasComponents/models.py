@@ -6,7 +6,7 @@ class ActivityAliasComponents(models.Model):
     target_id = models.IntegerField()
     name = models.CharField(max_length=50, null=True)
     exported = models.BooleanField()
-    permissionName = models.CharField(max_length=50)
+    permissionName = models.CharField(max_length=100)
     filterCheck = models.BooleanField()
     categoriesCheck = models.BooleanField()
 

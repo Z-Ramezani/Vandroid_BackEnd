@@ -7,7 +7,7 @@ from information import views
 
 class ListServicesComponents(APIView):
     def get(self, request):
-        serv = ServicesComponents.objects.filter(target_id=views.ListInfo.id).values()
+        serv = ServicesComponents.objects.filter(
+            target_id=views.ListInfo.id).values()
         service = ServicesSerializer(instance=serv, many=True)
-        ListServicesComponents.id = ((service.data[0]['id']))
         return Response(data=service.data)

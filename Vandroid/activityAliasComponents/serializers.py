@@ -1,4 +1,3 @@
-
 from rest_framework import serializers
 from activityAliasComponents.models import ActivityAliasComponents, Filter
 
@@ -14,7 +13,7 @@ class FilterSerializer(serializers.ModelSerializer):
         fields = ('name', 'actions', 'categories')
 
 
-class activityAliasSerializer(serializers.ModelSerializer):
+class ActivityAliasSerializer(serializers.ModelSerializer):
     filters = FilterSerializer(many=True, read_only=True)
 
     class Meta:

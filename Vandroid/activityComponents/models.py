@@ -1,5 +1,3 @@
-from asyncio.windows_events import NULL
-from operator import truediv
 from django.db import models
 
 
@@ -7,7 +5,7 @@ class ActivityComponents(models.Model):
     target_id = models.IntegerField()
     name = models.CharField(max_length=50, null=True)
     exported = models.BooleanField(null=True)
-    permissionName = models.CharField(max_length=50, null=True)
+    permissionName = models.CharField(max_length=100, null=True)
     filterCheck = models.BooleanField()
     categoriesCheck = models.BooleanField()
 
