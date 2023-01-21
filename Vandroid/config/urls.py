@@ -26,7 +26,6 @@ urlpatterns = [
     path('ActivityComponents/', include('activityComponents.urls')),
     path('ActivityAliasComponents/', include('activityAliasComponents.urls')),
     path('ServicesComponents/', include('servicesComponents.urls')),
-    path('Filter/', include('filter.urls')),
 
 
 

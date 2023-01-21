@@ -7,7 +7,6 @@ from information import views
 
 class ListActivityComponents(APIView):
     def get(self, request):
-        active = ActivityComponents.objects.filter(target_id=views.ListInfo.id).values()
+        active = ActivityComponents.objects.filter(target_id=views.ListInfo.id).all()
         activity = ActivitySerializer(instance=active, many=True)
-        ListActivityComponents.id = ((activity.data[0]['id']))
         return Response(data=activity.data)

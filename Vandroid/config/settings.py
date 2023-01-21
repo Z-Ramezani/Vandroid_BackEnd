@@ -47,7 +47,6 @@ INSTALLED_APPS = [
     'activityComponents.apps.ActivitycomponentsConfig',
     'activityAliasComponents.apps.ActivityaliascomponentsConfig',
     'servicesComponents.apps.ServicescomponentsConfig',
-    'filter.apps.FilterConfig',
 
 
 ]
