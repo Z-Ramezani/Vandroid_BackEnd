@@ -13,5 +13,5 @@ class BroadcastReceiversSerializer(serializers.ModelSerializer):
     filters = FilterSerializer(many=True, read_only=True)
     class Meta:
         model = BroadcastReceiversComponents
-        fields = ('target_id', 'exported', 'permissionName', 'filters')
+        fields = ('target_id', 'exported', 'permissionName','filterCheck','categoriesCheck', 'filters')
 
