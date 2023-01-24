@@ -26,17 +26,9 @@ urlpatterns = [
     path('ActivityComponents/', include('activityComponents.urls')),
     path('ActivityAliasComponents/', include('activityAliasComponents.urls')),
     path('ServicesComponents/', include('servicesComponents.urls')),
-    path('BroadcastReceiversComponents/',
-         include('broadcastReceiversComponents.urls')),
-    path('DynamicRegisteredComponents/',
-         include('dynamicRegisteredComponents.urls')),
+    path('BroadcastReceiversComponents/',include('broadcastReceiversComponents.urls')),
+    path('DynamicRegisteredComponents/',include('dynamicRegisteredComponents.urls')),
     path('Accounts/', include('accounts.urls')),
-    path('ContentProvidersComponents/',
-         include('contentProvidersComponents.urls')),
-
-
-
-
-
+    path('ContentProvidersComponents/',include('contentProvidersComponents.urls')),
 
 ]
