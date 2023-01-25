@@ -24,21 +24,5 @@ class UserRegisterSerializer(serializers.ModelSerializer):
 
 class CustomTokenObtainPairSerializer(TokenObtainPairSerializer):
     def validate(self, attrs):
-        # The default result (access/refresh tokens)
         data = super(CustomTokenObtainPairSerializer, self).validate(attrs)
-        #data.update({'type': 'seller'})
         return data
-
-# class LogoutSerializer(serializers.Serializer):
-#     refresh = serializers.CharField()
-
-#     def validate(self, attrs):
-#         self.token = attrs['refresh']
-#         return attrs
-
-#     def save(self, **kwargs):
-#         try:
-#             RefreshToken(self.token).blacklist()
-#         except TokenError:
-#             self.fail('bad token')
-
