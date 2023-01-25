@@ -7,12 +7,12 @@ class BroadcastReceiversComponents(models.Model):
     exported = models.BooleanField(null=True)
     permissionName = models.CharField(max_length=100, null=True)
     filterCheck = models.BooleanField()
-    categoriesCheck = models.BooleanField()
 
 class Filter(models.Model):
     comp = models.ForeignKey(
         BroadcastReceiversComponents, related_name='filters', on_delete=models.CASCADE)
     name = models.CharField(max_length=50, null=True)
+    categoriesCheck = models.BooleanField()
 
 
 class Category(models.Model):

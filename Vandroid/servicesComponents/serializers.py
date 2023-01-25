@@ -10,7 +10,7 @@ class FilterSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Filter
-        fields = ('name', 'actions', 'categories')
+        fields = ('name','categoriesCheck', 'actions', 'categories')
 
 
 class ServicesSerializer(serializers.ModelSerializer):
@@ -18,4 +18,4 @@ class ServicesSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = ServicesComponents
-        fields = ('target_id','name','' 'exported', 'permissionName','categoriesCheck','filterCheck', 'filters')
+        fields = ('target_id','name','exported', 'permissionName','filterCheck', 'filters')

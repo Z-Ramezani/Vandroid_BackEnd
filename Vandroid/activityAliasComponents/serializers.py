@@ -10,7 +10,7 @@ class FilterSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Filter
-        fields = ('name', 'actions', 'categories')
+        fields = ('name','categoriesCheck', 'actions', 'categories')
 
 
 class ActivityAliasSerializer(serializers.ModelSerializer):
@@ -18,4 +18,4 @@ class ActivityAliasSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = ActivityAliasComponents
-        fields = ('target_id','name','' 'exported', 'permissionName','categoriesCheck','filterCheck', 'filters')
+        fields = ('target_id','name', 'exported', 'permissionName','filterCheck', 'filters')
