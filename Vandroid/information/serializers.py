@@ -7,7 +7,3 @@ class InformationSerializer(serializers.ModelSerializer):
         model = Information
         fields = "__all__"
 
-# class InformationAppSerializer(serializers.ModelSerializer):
-#     class Meta:
-#         model = InformationApp
-#         fields = "__all__"
