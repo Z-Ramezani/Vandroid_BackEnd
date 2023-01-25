@@ -37,8 +37,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'drf_yasg',
     'rest_framework',
     'django_filters',
+    'corsheaders',
+    'rest_framework_simplejwt.token_blacklist',
     'information.apps.InformationConfig',
     'intentMessages.apps.IntentmessagesConfig',
     'usesPermission.apps.UsespermissionConfig',
@@ -51,7 +54,7 @@ INSTALLED_APPS = [
     'dynamicRegisteredComponents.apps.DynamicregisteredcomponentsConfig',
     'contentProvidersComponents.apps.ContentproviderscomponentsConfig',
     'accounts.apps.AccountsConfig',
-    'rest_framework_simplejwt.token_blacklist',
+    
 ]
 
 REST_FRAMEWORK = {
@@ -68,8 +71,15 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
+    'django.middleware.common.CommonMiddleware',
 ]
-
+CORS_ALLOWED_ORIGINS = [
+    "https://domain.com",
+    "https://api.domain.com",
+    "http://localhost:8080",
+]
+CORS_ALLOW_ALL_ORIGIN = True
 ROOT_URLCONF = 'config.urls'
 
 TEMPLATES = [

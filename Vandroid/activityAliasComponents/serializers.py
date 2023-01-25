@@ -18,4 +18,4 @@ class ActivityAliasSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = ActivityAliasComponents
-        fields = ('target_id', 'exported', 'permissionName', 'filters')
+        fields = ('target_id','name','' 'exported', 'permissionName','categoriesCheck','filterCheck', 'filters')

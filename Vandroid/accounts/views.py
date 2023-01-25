@@ -12,14 +12,9 @@ class UserRegister(APIView):
         data = {}
         if serialized_data.is_valid():
             account = serialized_data.save()
-            # data['response'] = "successfully registered"
             data['username'] = account.username
             data['email'] = account.email
             refresh = RefreshToken.for_user(account)
-            # res = {
-            #     'refresh': str(refresh),
-            #     'access': str(refresh.access_token),
-            # }
             data['refresh'] = str(refresh)
             data['access'] = str(refresh.access_token)
 

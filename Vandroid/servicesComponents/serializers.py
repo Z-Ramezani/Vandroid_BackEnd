@@ -18,4 +18,4 @@ class ServicesSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = ServicesComponents
-        fields = ('target_id', 'exported', 'permissionName', 'filters')
+        fields = ('target_id','name','' 'exported', 'permissionName','categoriesCheck','filterCheck', 'filters')

@@ -13,5 +13,5 @@ class DynamicRegisteredSerializer(serializers.ModelSerializer):
     filters = FilterSerializer(many=True, read_only=True)
     class Meta:
         model = DynamicRegisteredComponents
-        fields = ('target_id', 'exported', 'permissionName', 'filters')
+        fields = ('target_id','name','' 'exported', 'permissionName','categoriesCheck','filterCheck', 'filters')
 
